@@ -36,3 +36,6 @@ func BenchmarkHello(t *testing.B) {
 	}
 }
 ```
+* variadic parameter can be written like this ```func sum(numbers ...int) int``` where sum func can accept variable number of numbers and return sum of them
+* **interfaces** default value is nil
+* an **error* type can be converted to string with ```Error()** method
