@@ -7,3 +7,27 @@ func Sum(numbers []int) int {
 	}
 	return summation
 }
+
+func SumAll(numSets ...[]int) []int {
+	resultSet := make([]int, len(numSets))
+
+	for i, set := range numSets {
+		resultSet[i] = Sum(set)
+	}
+
+	return resultSet
+}
+
+func SumAllTails(numSets ...[]int) []int {
+	resultSet := make([]int, len(numSets))
+
+	for i, set := range numSets {
+		if len(set) == 0 {
+			resultSet[i] = 0
+		} else {
+			resultSet[i] = Sum(set[1:])
+		}
+	}
+
+	return resultSet
+}
