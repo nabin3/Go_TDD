@@ -13,4 +13,4 @@ but in go it's not allowed. So we can solve the problem by writting area method 
 
 * It's convention to use first letter of type as reciever name in method, here the reciever will always be in lowercase letter.
 
-* Interfaces are a very powerful concept in statically typed languages like Go because they allow you to make functions that can be used with different types and create highly-decoupled code whilst still maintaining type-safety.
+* Interfaces are a very powerful concept in statically typed languages like Go because they allow you to make functions that can be used with different types and create highly-decoupled code whilst still maintaining type-safety. In go interface resolution is implicit.
