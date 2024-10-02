@@ -32,7 +32,7 @@ to check for potential error which didn't covered with your test.
 ## Errors:
 * Errors are the way to signify failure when calling a function/method.
 * By listening to our tests we concluded that checking for a string in an error would result in a flaky test. So we refactored our implementation to use a meaningful value instead and this resulted in easier to test code and concluded this would be easier for users of our API too.
-* Don’t just check errors, handle them gracefully
+* Don’t just check errors, handle them gracefully. See this study: ```https://dave.cheney.net/2016/04/27/dont-just-check-errors-handle-them-gracefully```
 
 ## Create new types from existing ones
 *Useful for adding more domain specific meaning to values
