@@ -1,0 +1,4 @@
+* with select we can wait on multiple channels, whichevere channel get's signal fast ```case``` block related that channel executed and other case block will be skipped.
+* always use ```make``` to create channel, if you create channel with var like ```var ch chan struct{}``` the created channel will be initialized with zero value, for the channels the zero value is nil and if you try and send to it with <- it will block forever because you cannot send to nil channels.
+* ```sys.Exit()``` bypasses defer statement.
+* even if the parent function finished it's execution, the go routine created inside that func will run independently. only keep in mind that ```The main function runs in the main goroutine. If the main goroutine exits before all other goroutines have finished, the program will terminate, and any unfinished goroutines will be killed.``` This thing will causes resource leaks. 
